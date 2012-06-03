@@ -1,6 +1,6 @@
 '''
 Creates a tree
-@author: lkjoel
+@author: MiJyn
 '''
 
 import os

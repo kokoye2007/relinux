@@ -2,7 +2,7 @@
 Main relinux script
 @author: MiJyn
 '''
-from relinux import config, gui
+from relinux import config, gui, configutils
 #sys.path.append("./lib/.")
 #from .lib import *
 from argparse import ArgumentParser
