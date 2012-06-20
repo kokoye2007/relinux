@@ -2,8 +2,10 @@
 Main relinux script
 @author: MiJyn
 '''
+
+import sys
+sys.path.append("..")
 from relinux import config, gui, configutils
-#sys.path.append("./lib/.")
 #from .lib import *
 from argparse import ArgumentParser
 import tkinter
