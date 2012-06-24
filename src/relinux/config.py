@@ -3,6 +3,7 @@ Basic configuration
 @author: MiJyn
 '''
 
+# We should not use any imports in this file
 #import os
 #from relinux import fsutil
 
