@@ -3,9 +3,9 @@ layout: default
 ---
 
 ### About ###
-Relinux is a free remastering tool for linux. It was originally written as a fork of the remastering program
-named remastersys, but now it is completely rewritten in Python. The goal of this project is to let everyone from normal
-users to kernel hackers make their own OS easily.
+Relinux is a free remastering tool for linux. It was originally written as a fork of remastersys, 
+but now it is completely rewritten in Python. The goal of this project is to let everyone from normal users to 
+kernel hackers make their own OS easily.
 
 ### Features ###
 
