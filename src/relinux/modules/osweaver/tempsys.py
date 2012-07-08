@@ -1,6 +1,6 @@
 '''
 Generates a temporary filesystem to hack on
-@author: lkjoel
+@author: MiJyn
 '''
 
 from relinux import logger, config, configutils, fsutil, pwdmanip
