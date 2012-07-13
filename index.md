@@ -27,3 +27,7 @@ There are currently no downloads for relinux 0.4. Downloads for relinux 0.3 are 
 1. Choose and install your base system
 2. Customize it
 3. Run relinux
+
+### Helping out ###
+
+
