@@ -1,6 +1,6 @@
 '''
 OSWeaver Module for relinux
-@author: MiJyn
+@author: Joel Leclerc (MiJyn) <lkjoel@ubuntu.com>
 '''
 
 from relinux import threadmanager, config

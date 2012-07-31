@@ -1,6 +1,6 @@
 '''
 Main relinux script
-@author: MiJyn
+@author: Joel Leclerc (MiJyn) <lkjoel@ubuntu.com>
 '''
 
 import sys
