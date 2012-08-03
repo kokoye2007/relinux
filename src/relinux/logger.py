@@ -1,6 +1,6 @@
 """
 Contains streams for logging information
-@author: MiJyn
+@author: Joel Leclerc (MiJyn) <lkjoel@ubuntu.com>
 """
 
 from relinux import config
