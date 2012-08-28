@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset='utf-8' />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta name="description"
+	content="Relinux : A free tool to create a professional-looking OS" />
+<meta name="google-site-verification"
+	content="8oEMy7c-MfynNvTNB627ezoqqMxzOqWMHKO5UM1GarM" />
+
+<link rel="stylesheet" type="text/css" media="screen"
+	href="stylesheets/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen"
+	href="stylesheets/stylesheet.css">
+
+<script type="text/javascript" src="javascripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+
+<title>{% if page.title %} {{ page.title }} | {% endif %}Relinux</title>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'UA-33350913-1' ]);
+	_gaq.push([ '_setDomainName', 'relinuxkit.org' ]);
+	_gaq.push([ '_trackPageview' ]);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<!-- <script type="text/javascript">
+	function updateNextPrev() {
+		$(".slideshow .prev").css({
+			padding: 2
+		})
+		$(".slideshow .next").css({
+			padding: 2
+		})
+		$(".slideshow .prev").css({
+			position : "absolute",
+			left : $(".slider").offset().left,
+			top : (($(".slider").offset().top + $(".slider").outerHeight()) / 2) + ($(".slideshow .prev").outerHeight() / 2),
+			padding: 2,
+			"background-color" : "rgba(30, 30, 30, .5)"
+		});
+		$(".slideshow .next").css({
+			position : "absolute",
+			padding: 2,
+			left : $(".slider").outerWidth() + $(".slider").offset().left,
+			top : $(".slider").offset().top,
+			"background-color" : "rgba(30, 30, 30, .5)"
+		});
+	}
+	$(document).ready(function() {
+		$(".slideshow").slides({
+			container : "slider",
+			generateNextPrev : false,
+			//play : 2500,
+			effect : 'fade',
+			slidesLoaded : updateNextPrev,
+			animationComplete: updateNextPrev
+		});
+	});
+</script> -->
+<script>
+	$(document).ready(function() {
+		$(".navbar").scrollspy();
+		$('[data-spy="scroll"]').each(function () {
+		    var $spy = $(this).scrollspy('refresh')
+		});
+	});
+</script>
+</head>
+
+<body data-spy="scroll">
+
+	<!-- HEADER -->
+	<!-- <div id="header_wrap" class="outer">
+		<header class="inner">
+			<a id="forkme_banner" href="https://github.com/MiJyn/relinux">View
+				on GitHub</a>
+
+			<h1 id="project_title">
+				<a href="/">
+				</a>
+			</h1>
+		</header>
+	</div>-->
+	<header>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="#"><img src="images/relinux.png" /></a>
+					<ul class="nav">
+						<li><a href="#home">Home</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="navbar-shadow"></div>
+		</div>
+	</header>
+
+	<!-- MAIN CONTENT -->
+	<div id="main_content">
+		<div class="hero-unit" id="home">
+			<h1 style="font-size: 250%">Free linux distro creation toolkit</h1>
+			<!-- <div id="hero_slideshow" class="slideshow">
+				<div class="slider inner">
+					<div>
+						<img src="images/20mins.png" />Test
+					</div>
+					<div>
+						<img src="images/20mins.png" />
+					</div>
+				</div>
+				<a href="#" class="prev">&lt;</a> <a href="#" class="next">&gt;</a>
+			</div>-->
+			<img src="images/relinux_configure.png" />
+		</div>
+		<!-- <div class="hero_header_wrap_bottom"></div> -->
+		<section id="main_content" class="inner">
+			<div class="features">
+				<div class="row-fluid">
+					<div class="row-fluid span12">
+						<hr />
+					</div>
+					<div class="left row-fluid">
+						<div class="span12 text">
+							<h1>Fast</h1>
+							Relinux is completely multithreaded to let multiple operations
+							run at the same time, therefore decreasing the amount of time
+							needed.
+						</div>
+					</div>
+					<div class="row-fluid span12">
+						<hr />
+					</div>
+					<div class="right span12">
+						<img src="images/easy.png" class="span6" />
+						<div class="span6 text">
+							<h1>Easy</h1>
+							Apart from the easiness in its power, it is also a kit that
+							contains tools to help you customize your system.
+						</div>
+					</div>
+					<div class="row-fluid span12">
+						<hr />
+					</div>
+				</div>
+			</div>
+			{{ content }}
+			<hr />
+			<div id="disqus_thread"></div>
+			<script type="text/javascript">
+				var disqus_shortname = 'relinux';
+				//var disqus_url = "http://mijyn.github.com/relinux";
+				//var disqus_developer = 1;
+
+				(function() {
+					var dsq = document.createElement('script');
+					dsq.type = 'text/javascript';
+					dsq.async = true;
+					dsq.src = 'http://' + disqus_shortname
+							+ '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document
+							.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			</script>
+			<noscript>
+				Please enable JavaScript to view the <a
+					href="http://disqus.com/?ref_noscript">comments powered by
+					Disqus.</a>
+			</noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered
+				by <span class="logo-disqus">Disqus</span>
+			</a>
+		</section>
+	</div>
+
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			<p class="copyright">
+				Relinux written and maintained by <a href="https://github.com/MiJyn">MiJyn</a>
+			</p>
+		</footer>
+	</div>
+
+</body>
+</html>
