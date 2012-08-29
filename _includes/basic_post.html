@@ -1,0 +1,4 @@
+{% if page.is_post %}<h3 class="posttitle">{{ page.title }}</h3>{% else %}{% assign page = post %}<h3 class="posttitle"><a href="{{ page.url }}">{{ page.title }}</a></h3>{% endif %}
+<hr class="small" />
+<a href="/{{ page.date | date: '%Y' }}/{{ page.date | date: '%m' }}/">{{ page.date | date: "%B" }}</a> <a href="/{{ page.date | date: '%Y' }}/{{ page.date | date: '%m' }}/{{ page.date | date: '%d' }}/">{{ page.date | date: "%d" }}</a>, <a href="/{{ page.date | date: '%Y' }}/">{{ page.date | date: '%Y' }}</a>
+<p>{{ page.content }}</p>

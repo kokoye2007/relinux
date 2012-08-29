@@ -1,0 +1,10 @@
+---
+layout: default
+is_post_index: true
+---
+{% assign first_post = true %}{% for post in site.posts %}
+{% if first_post %}{% assign first_post = false %}{% else %}<hr />{% endif %}
+<div>
+	{% include basic_post.html %}
+</div>
+{% endfor %}
