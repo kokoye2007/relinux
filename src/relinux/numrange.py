@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Number range generator
 @author: Joel Leclerc (MiJyn) <lkjoel@ubuntu.com>

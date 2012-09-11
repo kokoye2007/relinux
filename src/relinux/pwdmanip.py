@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Password and group file manipulation
 @author: Joel Leclerc (MiJyn) <lkjoel@ubuntu.com>
