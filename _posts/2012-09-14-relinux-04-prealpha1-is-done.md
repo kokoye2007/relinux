@@ -10,10 +10,10 @@ For any of you wondering, it's currently under GPLv2, but by alpha 1, it will be
 
 Features that are (somewhat) implemented:
 
-  * GUI
-  * Logging
-  * OSWeaver (the part that _actually_ generates the ISO)
-  * Module API
+ * GUI
+ * Logging
+ * OSWeaver (the part that _actually_ generates the ISO)
+ * Module API
 
 Please report any bugs you may encounter to [https://github.com/MiJyn/relinux/issues?milestone=1&state=open](https://github.com/MiJyn/relinux/issues?milestone=1&state=open).
 
