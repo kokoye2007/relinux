@@ -101,7 +101,7 @@ $(document).ready(start);
 
 function showhide(el)
 {
-	hidden = true
+	hidden = true;
 	if (!($(el + " .hideme").hasClass("hidden")))
 	{
 		hidden = false
