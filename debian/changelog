@@ -2,7 +2,7 @@ relinux (0.4a1-2) unstable; urgency=high
 
   * Fix architecture bug.
 
- -- Joel Leclerc (MiJyn) <lkjoel@ubuntu.com>  Wed, 07 Nov 2012 00:00:00 -0700
+ -- Joel Leclerc (MiJyn) <lkjoeldev@gmail.com>  Wed, 07 Nov 2012 00:00:00 -0700
 
 
 relinux (0.4a1-1) unstable; urgency=low
