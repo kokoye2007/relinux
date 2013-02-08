@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 '''
 OSWeaver Module for relinux
+
 @author: Joel Leclerc (MiJyn) <lkjoel@ubuntu.com>
 '''
 

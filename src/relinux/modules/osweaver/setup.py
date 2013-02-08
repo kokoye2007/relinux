@@ -1,10 +1,10 @@
 '''
 Setup Dependencies
+
 @author: Joel Leclerc (MiJyn) <lkjoel@ubuntu.com>
 '''
 
-from relinux import logger, aptutil, configutils, threadmanager, config, fsutil
-import os
+from relinux import logger, aptutil, configutils, threadmanager, config
 import copy
 import threading
 
