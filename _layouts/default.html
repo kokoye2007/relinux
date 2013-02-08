@@ -9,20 +9,20 @@
 	content="8oEMy7c-MfynNvTNB627ezoqqMxzOqWMHKO5UM1GarM" />
 
 <link rel="stylesheet" type="text/css" media="screen"
-	href="/stylesheets/bootstrap.min.css">
+href="{{ page.root }}/stylesheets/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" media="screen"
-	href="/stylesheets/stylesheet.css">
-<link rel="icon" type="image/png" href="/images/relinux_mini.png">
+href="{{ page.root }}/stylesheets/stylesheet.css">
+	<link rel="icon" type="image/png" href="{{ page.root }}/images/relinux_mini.png">
 
 <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script type="text/javascript" src="/javascripts/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ page.root }}/javascripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="{{ page.root }}/javascripts/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://api.relinuxkit.org/api.js"></script>
-<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="{{ page.root }}/javascripts/main.js"></script>
 
 <title>{% if page.title %} {{ page.title }} - {% endif %}Relinux</title>
 
@@ -50,19 +50,19 @@
 		<div class="navbar">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="brand"><img src="/images/relinux-light.png" alt="Relinux"
+					<a class="brand"><img src="{{ page.root }}/images/relinux-light.png" alt="Relinux"
 						height="54" /></a>
 					<div class="nav-collapse">
 						<ul id="nav-menu" class="nav">
 							<li {% if page.is_main_page %} class="active"{% endif %}><a
-								href="{% if page.is_main_page %}{% else %}/{% endif %}#home">Home</a></li>
+								href="{% if page.is_main_page %}{% else %}{{ page.root }}/{% endif %}#home">Home</a></li>
 							<li><a
-								href="{% if page.is_main_page %}{% else %}/{% endif %}#features">Features</a></li>
+								href="{% if page.is_main_page %}{% else %}{{ page.root }}/{% endif %}#features">Features</a></li>
 							<li><a
-								href="{% if page.is_main_page %}{% else %}/{% endif %}#download">Download</a></li>
+								href="{% if page.is_main_page %}{% else %}{{ page.root }}/{% endif %}#download">Download</a></li>
 							<li><a style="color: #aaa; padding: 8px 0 7px 0;">|</a></li>
 							<li {% if page.is_post or page.is_post_index %} class="active"{% endif %}><a
-								href="{% if page.is_post_index %}{% else %}/blog/{% endif %}#">Blog</a></li>
+								href="{% if page.is_post_index %}{% else %}{{ page.root }}/blog/{% endif %}">Blog</a></li>
 							<li><a style="color: #aaa; padding: 8px 0 7px 0;">|</a></li>
 							<li><a href="https://github.com/MiJyn/relinux/wiki">Wiki</a></li>
 						</ul>
@@ -82,26 +82,15 @@
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
 			var disqus_shortname = 'relinux';
-			var disqus_url = "http://www.relinuxkit.org/{{ page.url }}";
-			var disqus_developer = 1;
 
-			(function()
-			{
-				var dsq = document.createElement('script');
-				dsq.type = 'text/javascript';
-				dsq.async = true;
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 				dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-				(document.getElementsByTagName('head')[0] || document
-						.getElementsByTagName('body')[0]).appendChild(dsq);
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 			})();
 		</script>
-		<noscript>
-			Please enable JavaScript to view the <a
-				href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-		</noscript>
-		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span
-			class="logo-disqus">Disqus</span>
-		</a>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 	</div>
 	<div id="footer_wrap">
 		<hr />

@@ -2,6 +2,7 @@
 layout: post
 title: Relinux 0.3a3 is released!
 author: MiJyn
+root: ../../../
 ---
 Yep, the last milestone needed to release 0.4a1 is finished!
 

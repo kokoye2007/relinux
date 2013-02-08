@@ -1,6 +1,7 @@
 ---
 layout: default
 is_main_page: true
+root: ./
 ---
 
 <div class="hero-unit">
@@ -17,24 +18,24 @@ is_main_page: true
 			</div>
 			<div class="item">
 				<center>
-					<img src="images/relinux_main.png" class="center" align="center" />
+					<img src="{{ page.root }}/images/relinux_main.png" class="center" align="center" />
 				</center>
 			</div>
 			<div class="item">
 				<center>
-					<img src="images/relinux_configure_general.png" class="center"
+					<img src="{{ page.root }}/images/relinux_configure_general.png" class="center"
 						align="center" />
 				</center>
 			</div>
 			<div class="item">
 				<center>
-					<img src="images/relinux_configure_advanced.png" class="center"
+					<img src="{{ page.root }}/images/relinux_configure_advanced.png" class="center"
 						align="center" />
 				</center>
 			</div>
 			<div class="item">
 				<center>
-					<img src="images/relinux_osweaver.png" class="center"
+					<img src="{{ page.root }}/images/relinux_osweaver.png" class="center"
 						align="center" />
 				</center>
 			</div>
@@ -116,7 +117,7 @@ is_main_page: true
 				Open the Software Sources menu by launching the Ubuntu Software Center and
 				selecting Edit->Software Sources. Choose the Other Software tab and click Add.
 				<br />
-				<img src="/images/relinux_ppa_add.png" />
+				<img src="{{ page.root }}/images/relinux_ppa_add.png" />
 				<br />
 				Enter <code>ppa:relinux-dev/testing</code>.<br />
 				<h5>Alternative terminal method:</h5>
