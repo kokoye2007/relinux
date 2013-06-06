@@ -55,14 +55,14 @@ href="{{ page.root }}/stylesheets/stylesheet.css">
 					<div class="nav-collapse">
 						<ul id="nav-menu" class="nav">
 							<li {% if page.is_main_page %} class="active"{% endif %}><a
-								href="{% if page.is_main_page %}{% else %}{{ page.root }}/{% endif %}#home">Home</a></li>
+								href="{% if page.is_main_page %}{% else %}{{ page.root }}{% endif %}#home">Home</a></li>
 							<li><a
-								href="{% if page.is_main_page %}{% else %}{{ page.root }}/{% endif %}#features">Features</a></li>
+								href="{% if page.is_main_page %}{% else %}{{ page.root }}{% endif %}#features">Features</a></li>
 							<li><a
-								href="{% if page.is_main_page %}{% else %}{{ page.root }}/{% endif %}#download">Download</a></li>
+								href="{% if page.is_main_page %}{% else %}{{ page.root }}{% endif %}#download">Download</a></li>
 							<li><a style="color: #aaa; padding: 8px 0 7px 0;">|</a></li>
 							<li {% if page.is_post or page.is_post_index %} class="active"{% endif %}><a
-								href="{% if page.is_post_index %}{% else %}{{ page.root }}/blog/{% endif %}">Blog</a></li>
+								href="{% if page.is_post_index %}{% else %}{{ page.root }}blog/{% endif %}">Blog</a></li>
 							<li><a style="color: #aaa; padding: 8px 0 7px 0;">|</a></li>
 							<li><a href="https://github.com/MiJyn/relinux/wiki">Wiki</a></li>
 						</ul>
