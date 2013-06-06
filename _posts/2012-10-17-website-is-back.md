@@ -2,7 +2,6 @@
 layout: post
 title: Website is back!
 author: MiJyn
-root: ../../../
 ---
 After a few weeks of DNS issues, we have finally been able to fix the website.
 

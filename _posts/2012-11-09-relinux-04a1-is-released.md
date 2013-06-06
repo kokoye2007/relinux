@@ -2,7 +2,6 @@
 layout: post
 title: Relinux 0.4a1 is released!
 author: MiJyn
-root: ../../../
 ---
 After about a year of writing, rewriting, and rebasing, relinux 0.4a1 has finally been released!
 Here are a few of the new features in relinux 0.4:
