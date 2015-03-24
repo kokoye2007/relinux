@@ -90,8 +90,8 @@ class remConfig(threadmanager.Thread):
         # Remove these files as they can conflict inside the installed system
         logger.logV(self.tn, logger.I, _("Removing personal configurations that can break the installed system"))
         fsutil.rmfiles(
-            [tmpsys + "etc/X11/xorg.conf*", tmpsys + "etc/resolv.conf",
-             tmpsys + "etc/hosts", tmpsys +
+            #[tmpsys + "etc/X11/xorg.conf*", tmpsys + "etc/resolv.conf",
+            [tmpsys + "etc/hosts", tmpsys +
              "etc/hostname", tmpsys + "etc/timezone",
              tmpsys + "etc/mtab", tmpsys + "etc/fstab",
              tmpsys + "etc/udev/rules.d/70-persistent*",
